@@ -86,11 +86,13 @@ Create a new TODO item.
 ## Features Completed
 
 - Add TODO from frontend (React form → POST API → MongoDB)
-- Display TODO list from MongoDB (GET API)
-- Dockerized setup with 3 containers
-- Persistent DB using Mongo volumes
-- React Hooks implementation
-- Production-ready code structure and error handling
+- Display TODO list dynamically from MongoDB (GET API)
+- Delete TODO feature with instant UI update
+- Loading indicators & error handling for API requests
+- Dockerized setup with 3 containers (React + Django + MongoDB)
+- Persistent MongoDB storage using Docker volumes
+- Clean React hooks architecture (useState, useEffect)
+- Lightweight REST API without Django models or serializers
 
 
 ---
