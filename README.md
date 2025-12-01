@@ -1,5 +1,4 @@
-# Adbrew TODO App — Full Stack (React + Django + Mongo + Docker)
-
+# Adbrew TODO App
 This project is a full-stack TODO application built as part of the **Adbrew Backend SDE Intern Assignment**.  
 It demonstrates containerized architecture using **Docker**, with API integration between **React**, **Django REST API**, and **MongoDB**.
 
@@ -39,14 +38,78 @@ git clone https://github.com/TuShArBhArDwA/adbrew-todo-app.git
 cd adbrew-todo-app
 ```
 
+```
 # Set environment variable (Windows Command Prompt)
 set ADBREW_CODEBASE_PATH=%cd%\src
+```
 
+```
 # Build and start containers
 docker compose up --build -d
+```
 
+```
 # Check running containers
 docker ps
+```
 
+---
+
+## Application URLs
+
+| Service         | URL                          |
+|-----------------|------------------------------|
+| React Frontend  | http://localhost:3000        |
+| Django API      | http://localhost:8000/todos  |
+| MongoDB         | localhost:27017              |
+
+---
+
+## API Endpoints
+
+### **GET /todos/**
+Fetch all TODO items from MongoDB.
+
+### **POST /todos/**
+Create a new TODO item.
+
+**Sample Request Body**
+```json
+{
+  "text": "Learn Docker"
+}
+```
+
+
+---
+
+## Features Completed
+
+- Add TODO from frontend (React form → POST API → MongoDB)
+- Display TODO list from MongoDB (GET API)
+- Dockerized setup with 3 containers
+- Persistent DB using Mongo volumes
+- React Hooks implementation
+- Production-ready code structure and error handling
+
+
+---
+
+
+## License
+
+See the [LICENSE](./LICENSE) file for details.
+
+
+---
+
+## Contact
+
+- **Meet T-Bot** - [Discover My Work](https://t-bot-blush.vercel.app/)
+- **Tushar Bhardwaj** - [Portfolio](https://tushar-bhardwaj.vercel.app/)
+- **Connect 1:1** - [Topmate](https://topmate.io/tusharbhardwaj)
+- **GitHub:** [TuShArBhArDwA](https://github.com/TuShArBhArDwA)
+- **LinkedIn:** [Tushar Bhardwaj](https://www.linkedin.com/in/bhardwajtushar2004/)
+- **Email:** [tusharbhardwaj2617@example.com](mailto:tusharbhardwaj2617@example.com)
 
 
