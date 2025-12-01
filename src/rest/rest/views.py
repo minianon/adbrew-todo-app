@@ -39,3 +39,11 @@ class TodoListView(APIView):
         except Exception as e:
             logging.error(str(e))
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def delete(self, request):
+        try:
+            todo_id = request.data.get("_id")
+            todo_collection.delete_one({"_id": ObjectId(todo_id)})
+            return Response({"message": "Todo deleted"}, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
