@@ -81,6 +81,21 @@ Create a new TODO item.
 ```
 
 
+### **DELETE /todos/{id}/**
+Delete a TODO item by ID.
+
+**Sample Request**
+```json
+DELETE http://localhost:8000/todos/692da939ddc7fd65c037f9b7/
+```
+
+**Sample Response**
+```json
+{
+  "message": "Todo deleted"
+}
+```
+
 ---
 
 ## Features Completed
