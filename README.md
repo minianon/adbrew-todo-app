@@ -112,14 +112,6 @@ DELETE http://localhost:8000/todos/692da939ddc7fd65c037f9b7/
 
 ---
 
-
-## License
-
-See the [LICENSE](./LICENSE) file for details.
-
-
----
-
 ## Contact
 
 - **Meet T-Bot** - [Discover My Work](https://t-bot-blush.vercel.app/)
